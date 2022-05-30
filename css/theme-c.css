@@ -1,0 +1,435 @@
+@font-face {
+    font-family: charter;
+    src: url('../fonts/charter-regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: charter;
+    src: url('../fonts/charter-italic.otf');
+    font-style: italic;
+    font-weight: 400;
+}
+      
+@font-face {
+    font-family: charter;
+    src: url('../fonts/charter-bold.otf');
+    font-style: normal;
+    font-weight: bold;
+}    
+@font-face {
+    font-family: charter;
+    src: url('../fonts/charter-bold-italic.otf');
+    font-style: italic;
+    font-weight: bold;    
+}
+:root {
+    font-size: 16px;
+    --gray50: #808080;
+    --gray40: #424242;
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin-block-start: 40px;
+    /* text-align: center; */
+}
+a {
+    color: var(--gray30);
+}
+img {
+    max-inline-size: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+.hola   {
+    margin-inline: 0;
+    margin-block-end: 0;
+}
+header {
+    margin-block-start: 64px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray10);
+    line-height: 24px;
+    padding-inline: 16px;
+    margin-inline: 16px;
+}
+.header a {
+    text-decoration: none;
+}
+.nav {
+    width: 328px;
+    height: 180px;
+    margin-block-end: 40px;
+    /* margin-inline-end: 80px; */
+}
+.nav2 {
+    width: 280px;
+    height: 445px;
+}
+main {
+    margin-inline: 16px;
+}
+.main-content {
+    padding-inline: 16px;
+}
+.variantes {
+    margin-inline-start: -25px;
+}
+.variantes li {
+    margin-block: 12px;
+    width: 72px;
+    height: 20px;
+    line-height: 0px;
+    font-weight: 500;
+    padding-inline-start: 8px;
+}
+ul .selected {
+    background: #000000;
+    width: 275px;
+    height: 13px;
+    padding-block-start: 14px;
+    padding-block-end: 3px;
+    border-radius: 6px;
+}
+.selected a {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+summary {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.con {
+    margin-inline-start: 2px;
+    border-inline-start: 5px solid red;
+    padding-inline-start: 10px;
+}
+.contenido {
+    margin-block-start: 15px;
+    margin-block-end: 20px;
+    color: var(--gray10);
+    font-weight: 400;
+    line-height: 14px;
+    margin-inline-start: -20px;
+}
+.contenido li {
+    padding-block: 8px;
+    font-weight: 400;
+}
+.consep li {
+    padding-block: 8px;
+    line-height: 14px;
+}
+h1 {
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--gray20);
+    font-weight: bold;
+    padding-inline: 16px;
+    margin-inline: 16px;
+}
+h1 + p {
+    padding-inline: 16px;
+    margin-inline: 16px;
+}
+hr {
+    color: var(--gray10);
+    display: block;
+    margin-block-start: 64px;
+    margin-block-end: 64px;
+}
+h2 {
+    margin-block-end: 40px;
+    font-weight: bold;
+}
+h3 {
+    font-weight: 600;
+    display: block;
+    padding-block-end: 4px;
+}
+section {
+    counter-reset: titleList;
+}
+section h3 {
+    counter-increment: titleList;
+    padding-block-end: 8px;
+    margin-block-start: 16px;
+    margin-block-end: 24px;
+    padding-bottom: 8px;
+    position: relative;
+}
+section h3::before {
+    content: counter(titleList, decimal) '. ';
+}
+section h3::after {
+    content: '';
+    bottom: 0;
+    left: 0;
+    background: var(--gray30);
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+}
+.section1 p {
+    margin-block-end: 40px;
+}
+blockquote {
+    margin-block-start: 32px;
+    margin-block-end: 64px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    border-left: 3px solid red;
+    font-size: 14px;
+    line-height: 32px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 5px;
+}
+blockquote p {
+    color: var(--gray40);
+    width: 592px;
+    height: 32px;
+}
+blockquote span {
+    color: var(--gray10);
+    width: 203px;
+    height: 32px;
+}
+blockquote span::before {
+    content: '-';
+}
+pre {
+    background: #FEC62E;
+    padding: 40px;
+    font-family: 'Roboto';
+    line-height: 24px;
+    overflow: auto;
+}
+.section2 {
+    color: var(--gray40);
+}
+.section2 h2 {
+    margin-block-end: 40px;
+    color: var(--gray30);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+}
+.section2 h3 {
+    margin-block-start: 40px;
+    margin-block-end: 24px;
+}
+.section3 {
+    margin-block-start: 40px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray40);
+}
+.section3 h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: var(--gray20);
+}
+.section3 h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-block-start: 40px;
+    margin-block-end: 16px;
+}
+.video {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.section6 {
+    position: relative;
+    padding-inline-end: 16px;
+}
+.slider-container {
+    display: block;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+    margin-inline: 16px;
+}
+.slider-bullet-list {
+    text-align: center;
+    margin-block-start: 10px;
+}
+.slider-bullet1 {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: blue;
+    border-radius: 50%;
+}
+.slider-bullet2 {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: yellow;
+    border-radius: 50%;
+}
+.slider-bullet3 {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: red;
+    border-radius: 50%;
+}
+.form input {
+    display: inline;
+    border-radius: 90px;
+    height: 15px;
+    width: 65%;
+    inset-block-end: 10px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 5px solid powderblue;
+}
+.input1 {
+    position: absolute;
+    inset-inline-start: 16px;
+}
+.input2 {
+    position: absolute;
+    inset-inline-end: 16px;
+    inset-inline-start: 16px;
+    inset-block-start: 170px;
+}
+button {
+    position: absolute;
+    border-radius: 90px;
+    inset-block-start: 173px;
+    inset-inline-start: 168px;
+    height: 42px;
+    width: 110px;
+    padding-block-start: 2px;
+    padding-block-end: 14;
+    padding-inline-start: 11px;
+    padding-inline-end: 16px;
+    background: #000000;
+    color: white;
+    font-size: 16px;
+}
+.hero2 {
+    background-color: var(--gray20);
+    inset-block-start: 100%;
+    margin-block-start: 120px;
+    position: relative;
+    height: 120px;
+    width: 100%;
+    margin-block-end: -8px;
+    margin-inline: 0;
+    }
+.hero2 p {
+    padding-block: 40px;
+    font-size: 32px;
+    line-height: 38px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+        h1 {
+            margin-block-start: 64px;
+            font-size: 60px;
+            line-height: 70px;
+        }
+        .variantes {
+            margin-block-end: 20px;
+        }
+        .contenido {
+            line-height: 24px;
+        }
+        .consep li {
+            line-height: 24px;
+        }
+        blockquote {
+            border-left: 5px solid red  ;
+            font-size: 24px;
+            padding-inline-start: 16px;
+        }
+        .hola   {
+            margin-inline: 200px;
+            margin-block-end: 105px;
+        }
+        main {
+            margin-inline: 200px;
+        }
+        .form input {          
+            height: 30px;
+            width: 35%;
+            inset-block-end: 5px;
+        }
+        .input1 {
+            position: absolute;
+            inset-inline-start: 16px;
+        }
+        .input2 {
+            position: absolute;
+            inset-inline-end: 16px;
+            inset-inline-start: 16px;
+            inset-block-start: 150px;
+        }
+        button {
+            inset-block-start: 154px;
+            inset-inline-start: 464px;
+            height: 56px;
+            padding-block-start: 12px;
+            padding-block-end: 12px;
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 45px;
+        }
+        body {
+            margin-block-start: 80px;
+        }
+        .nav {
+            width: 280px;
+            height: 240px;
+            margin-block-end: 104px;
+        }
+        .nav2 {
+            height: 512px;
+        }
+        .hola {
+            margin-block-end: 104px;
+        }
+        .variantes {
+            margin-inline-start: 0;
+        }
+        ul .selected {
+            width: 100px;
+        }    
+}
+
+    
